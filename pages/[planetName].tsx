@@ -24,9 +24,15 @@ const PlanetPage = () => {
 	useEffect(() => {}, [data]);
 	return (
 		<div>
+			{/* Styled Components Global Styles */}
 			<GlobalStyles />
+
+			{/* Navbar */}
 			<NavBar>
+				{/* Navbar Logo */}
 				<NavHeading>THE PLANET</NavHeading>
+
+				{/* Navbar Planet List - PC and Tablet*/}
 				<NavPlanetList>
 					{PLANET_NAMES.map((item) => {
 						const tempName = item.name;
@@ -47,6 +53,9 @@ const PlanetPage = () => {
 					})}
 				</NavPlanetList>
 			</NavBar>
+			{/* TODO - Navbar Mobile */}
+
+			{/* TODO - Component for Main data */}
 		</div>
 	);
 };
